@@ -25,7 +25,12 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/flask-app-ecs:latest
+            echo  ${{ secrets.DOCKERHUB_USERNAME }}
+            echo ${{ secrets.DOCKERHUB_USERNAME }}/flask-app-ecs:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/flask-app-ecs:${{ github.sha }}
+            echo ${{ secrets.DOCKERHUB_USERNAME }}
+            echo ${{ secrets.DOCKERHUB_USERNAME }}/flask-app-ecs:${{ github.sha }}
+       
     
   
   
